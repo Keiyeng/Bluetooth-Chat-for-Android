@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <Button
+            android:id="@+id/scanbtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Scan For Devices"
+            />
+
+        <TextView
+            android:id="@+id/pairdevicesheader"
+            android:layout_below="@id/scanbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paired Devices"
+            />
+
+        <View
+            android:id="@+id/separator"
+            android:background="#D3D3D3"
+            android:layout_width = "fill_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical ="true"
+            android:layout_alignParentTop="true"/>
+
+        <ListView
+            android:id="@+id/pairlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:id="@+id/devicesheader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Available Devices"
+        />
+
+        <View
+            android:id="@+id/separator2"
+            android:background="#D3D3D3"
+            android:layout_width = "fill_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical ="true"
+            android:layout_alignParentTop="true"/>
+
+         <ListView
+             android:id="@+id/devicelist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+</LinearLayout>
